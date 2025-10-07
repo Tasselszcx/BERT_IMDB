@@ -48,4 +48,5 @@ jupyter notebook
 - 单元格9: 绘制混淆矩阵, 显示准确率分布, 可视化训练过程
 - 单元格10: 使用训练好的模型分析新评论， 演示模型实际应用
 - 单元格11: 计算详细性能指标， 分析各类别准确率
+   ![arch](visualizations/bert_imdb_rtx4090_results.png)
 
