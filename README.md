@@ -12,7 +12,7 @@
 - 提供完整的可视化分析和模型评估
 - 包含实时情感分析演示
 
-## 🛠️ 技术栈
+## 🛠️ 项目依赖
 - 深度学习框架: PyTorch 2.1.0 + CUDA 12.1
 - 预训练模型: BERT-base-uncased
 - 数据处理: Hugging Face Transformers & Datasets
