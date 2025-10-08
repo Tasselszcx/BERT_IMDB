@@ -3,10 +3,24 @@
 ---
 
 
-## 项目概述
-基于BERT的IMDB电影评论情感分类系统，能够自动识别评论的情感倾向（正面/负面）。
+## 📖 项目概述
+这是一个基于BERT模型的电影评论情感分析系统，能够自动识别IMDB电影评论的情感倾向（正面/负面）。项目从零开始，涵盖了环境配置、数据预处理、模型训练、评估测试到结果可视化的完整机器学习流程。
 
-## 环境配置
+## 🎯 项目特点
+- 使用先进的BERT预训练模型进行微调
+- 在25,000条评论的完整IMDB数据集上训练
+- 提供完整的可视化分析和模型评估
+- 包含实时情感分析演示
+
+## 🛠️ 技术栈
+- 深度学习框架: PyTorch 2.1.0 + CUDA 12.1
+- 预训练模型: BERT-base-uncased
+- 数据处理: Hugging Face Transformers & Datasets
+- 可视化: Matplotlib & Seaborn
+- 评估指标: Scikit-learn
+- 开发环境: Jupyter Notebook + Conda
+  
+## 🚀 环境配置
 ### 1. 创建Conda虚拟环境
 ``` bash
 conda create -n bert-imdb-gpu python=3.10
@@ -21,19 +35,28 @@ pip install torch torchvision torchaudio --index-url https://download.pytorch.or
 pip install transformers[torch] datasets pandas numpy matplotlib seaborn scikit-learn tqdm jupyter
 ```
 
-### 3. 验证环境
-```bash
-python -c "import torch; print(f'PyTorch: {torch.__version__}, CUDA: {torch.cuda.is_available()}')"
-```
-
-## 运行代码
-### 1. 启动Jupyter Notebook:
+### 3. 启动jupyter notebook
 ```bash
 jupyter notebook
 ```
-### 2. 打开 bert_imdb.ipynb
-### 3. 按顺序运行所有单元格
 
+## 🎮 运行项目
+- 打开 bert_imdb.ipynb
+- 按顺序运行所有单元格
+
+## 📁 项目结构
+- ├── bert_imdb.ipynb # 主项目文件
+- ├── 📁 bert_imdb_final/ # 训练好的模型
+- │ ├── config.json
+- │ ├── special_tokens_map.json
+- │ ├── tokenizer.json
+- │ ├── training_args.bin
+- │ ├── vicab.txt
+- │ └── tokenizer_config.json
+- ├── 📁 visualizations/ # 生成的图表
+- │ └── bert_imdb_rtx4090_results.png
+- │── requirements.txt # 项目依赖
+- └── README.md # 项目说明
 ---
 
 ## bert_imdb.ipynb代码结构说明
